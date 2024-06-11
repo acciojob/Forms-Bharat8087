@@ -15,6 +15,12 @@ const FormRef = () => {
       passwordConfirmation: passwordConfirmationRef.current.value,
     };
     console.log(formData);
+
+    // Reset form fields
+    fullNameRef.current.value = '';
+    emailRef.current.value = '';
+    passwordRef.current.value = '';
+    passwordConfirmationRef.current.value = '';
   };
 
   return (
