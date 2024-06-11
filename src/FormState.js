@@ -16,6 +16,14 @@ const FormState = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(formData);
+
+    
+    setFormData({
+      fullName: '',
+      email: '',
+      password: '',
+      passwordConfirmation: '',
+    });
   };
 
   return (
